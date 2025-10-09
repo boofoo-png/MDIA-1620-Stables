@@ -106,6 +106,8 @@ let horseObject = {
     age: 6,
     monthlyRent: 300,
     isHorseInside: true,
+    overall: 95,
+    Finisher:
 };
 
 let horseTwoObject = {
@@ -115,6 +117,8 @@ let horseTwoObject = {
     age: 5,
     monthlyRent: 400,
     isHorseInside: false,
+    overall: 95,
+    Finisher: Stunner,
 };
 
 let horseThreeObject = {
@@ -124,6 +128,8 @@ let horseThreeObject = {
     age: 3,
     monthlyRent: 150,
     isHorseInside: true,
+    overall: 93,
+    Finisher: CrossRhodes,
 };
 let horseFourObject = {
     name: "Seth",
@@ -132,14 +138,14 @@ let horseFourObject = {
     age: 4,
     monthlyRent: 700,
     isHorseInside: true,
+    overall: 92,
+    Finisher: CurbStomp,
 };
 
 let horses = [horseObject, horseTwoObject, horseThreeObject, horseFourObject];
 
 console.log(horses);
 
-horseTwoObject.favouriteDrink = "Beer";
-horseObject.favouriteMove = "People's Elbow";
 
 horseObject.isHungry = true;
 horseTwoObject.isHungry = false;
@@ -161,3 +167,43 @@ horseFourObject.isHungry = false;
 
 // Initialize new property to your horses: a boolean that allows you to check if your horse
 // is hungry or not. Use dot notation.
+
+//
+//
+// let horseNames = ["Rocky", "Stone Cold", "Seth"];
+// console.log(
+//     "My horses are called " +
+//     horseNames [0]+
+//     ", " + horseNames [1] +
+//     ", and " + horseNames [2]
+// );
+
+// console.log("My horses are called " + horseNames);
+// console.log("My horses are named " + horsesname.join());
+
+function squareThisNumber(number) {
+    console.log(number * number);
+}
+
+squareThisNumber(3);
+squareThisNumber(11);
+
+function addTheseTwoThings(firstThingToAdd, secondThingToAdd) {
+    console.log(
+        "When you add " +
+            firstThingToAdd +
+            " and " +
+            secondThingToAdd +
+            ", you get a total of " +
+            (firstThingToAdd + secondThingToAdd)
+    );
+}
+
+let firstNumber = 2;
+let secondNumber = 22;
+let arrayOfNumbers = [3, 9, 17, 42];
+
+addTheseTwoThings(3, 7);
+addTheseTwoThings(24, 37);
+addTheseTwoThings(firstNumber, secondNumber);
+addTheseTwoThings(arrayOfNumbers[0], arrayOfNumbers[1]);
