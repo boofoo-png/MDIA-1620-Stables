@@ -151,6 +151,15 @@ horseTwoObject.isHungry = false;
 horseThreeObject.isHungry = true;
 horseFourObject.isHungry = false;
 
+let changer = "Hello World";
+changer = "BYE WORLD";
+
+const MONTHLY_RENT = 300;
+MONTHLY_RENT = 400;
+
+function payMe(rent = MONTHLY_RENT) {
+    let message = "You owe me " + rent + " dollars!";
+}
 //
 // The horses should have the following properties:
 // - name, nickname, favorite treat (string)
