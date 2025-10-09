@@ -107,7 +107,7 @@ let horseObject = {
     monthlyRent: 300,
     isHorseInside: true,
     overall: 95,
-    Finisher:
+    Finisher: RockBottom,
 };
 
 let horseTwoObject = {
@@ -145,7 +145,6 @@ let horseFourObject = {
 let horses = [horseObject, horseTwoObject, horseThreeObject, horseFourObject];
 
 console.log(horses);
-
 
 horseObject.isHungry = true;
 horseTwoObject.isHungry = false;
