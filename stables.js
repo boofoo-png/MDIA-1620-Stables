@@ -107,7 +107,7 @@ let horseObject = {
     monthlyRent: 300,
     isHorseInside: true,
     overall: 95,
-    Finisher: RockBottom,
+    Finisher: "Rock Bottom",
 };
 
 let horseTwoObject = {
@@ -118,7 +118,7 @@ let horseTwoObject = {
     monthlyRent: 400,
     isHorseInside: false,
     overall: 95,
-    Finisher: Stunner,
+    Finisher: "Stone Cold Stunner",
 };
 
 let horseThreeObject = {
@@ -129,7 +129,7 @@ let horseThreeObject = {
     monthlyRent: 150,
     isHorseInside: true,
     overall: 93,
-    Finisher: CrossRhodes,
+    Finisher: "Cross Rhodes",
 };
 let horseFourObject = {
     name: "Seth",
@@ -139,7 +139,7 @@ let horseFourObject = {
     monthlyRent: 700,
     isHorseInside: true,
     overall: 92,
-    Finisher: CurbStomp,
+    Finisher: "Curb Stomp",
 };
 
 let horses = [horseObject, horseTwoObject, horseThreeObject, horseFourObject];
@@ -215,3 +215,34 @@ addTheseTwoThings(3, 7);
 addTheseTwoThings(24, 37);
 addTheseTwoThings(firstNumber, secondNumber);
 addTheseTwoThings(arrayOfNumbers[0], arrayOfNumbers[1]);
+
+//------------------------- Growing our business (Lab #2, Week 6) -------------------------//
+
+// Create a variable that stores your total number of stalls.
+// Create a function that logs out how many stalls are available, given how many horses you have in your stable.
+
+// Create a function that logs out how much will an individual horse will owe if rent is
+// paid late. Invoke the function.
+
+// Create and invoke a function that returns (not logs) the nickname of a chosen horse. Log out
+// the return value outside of the function.
+
+
+let numberOfStalls = 4;
+
+function horseStalls (horseInside, horseNotInside) {
+    console.log(
+        "When you minus " + 
+            horseInside + " and " +
+            horseNotInside + ", you get a total of " + 
+            (horseInside - horseNotInside) 
+        );
+}
+
+
+let horseLateFee = rent + lateFee;
+function horseLateFee(rent, horseObject, lateFee);{
+console.log ("Your payment is super late, please pay " + horseLateFee + "or else...")
+};
+
+horseLateFee(horseTwoObject, monthlyRent, horseLateFee);
