@@ -154,12 +154,12 @@ horseFourObject.isHungry = false;
 let changer = "Hello World";
 changer = "BYE WORLD";
 
-const MONTHLY_RENT = 300;
-MONTHLY_RENT = 400;
+//const MONTHLY_RENT = 300;
+//MONTHLY_RENT = 400;
 
-function payMe(rent = MONTHLY_RENT) {
-    let message = "You owe me " + rent + " dollars!";
-}
+//function payMe(rent = MONTHLY_RENT) {
+//   let message = "You owe me " + rent + " dollars!";
+//}
 //
 // The horses should have the following properties:
 // - name, nickname, favorite treat (string)
@@ -227,22 +227,42 @@ addTheseTwoThings(arrayOfNumbers[0], arrayOfNumbers[1]);
 // Create and invoke a function that returns (not logs) the nickname of a chosen horse. Log out
 // the return value outside of the function.
 
-
 let numberOfStalls = 4;
 
-function horseStalls (horseInside, horseNotInside) {
+function horseStalls(horseInside, horseNotInside) {
     console.log(
-        "When you minus " + 
-            horseInside + " and " +
-            horseNotInside + ", you get a total of " + 
-            (horseInside - horseNotInside) 
-        );
+        "When you minus " +
+            horseInside +
+            " and " +
+            horseNotInside +
+            ", you get a total of " +
+            (horseInside - horseNotInside)
+    );
 }
 
+function horseFee(horse) {
+    let horseLateFee = horse.monthlyRent + horse.monthlyRent * 0.2;
+    console.log(
+        "Your payment is super late, please pay " + horseLateFee + " or else..."
+    );
+}
 
-let horseLateFee = rent + lateFee;
-function horseLateFee(rent, horseObject, lateFee);{
-console.log ("Your payment is super late, please pay " + horseLateFee + "or else...")
-};
+horseFee(horseTwoObject);
 
-horseLateFee(horseTwoObject, monthlyRent, horseLateFee);
+function horseNickNames(horse) {
+    return horse.nickname;
+}
+
+let nickname = horseNickNames(horseFourObject);
+
+console.log(nickname);
+
+/*let num1 = 4 + 4;
+num1 = 10 + 10;
+
+function add(number1, number2) {
+    return number1 + number2;
+}
+
+console.log(add(1, 3));
+*/
