@@ -227,7 +227,7 @@ addTheseTwoThings(arrayOfNumbers[0], arrayOfNumbers[1]);
 // Create and invoke a function that returns (not logs) the nickname of a chosen horse. Log out
 // the return value outside of the function.
 
-let numberOfStalls = 4;
+/*let numberOfStalls = 4;
 
 function horseStalls(horseInside, horseNotInside) {
     console.log(
@@ -238,7 +238,17 @@ function horseStalls(horseInside, horseNotInside) {
             ", you get a total of " +
             (horseInside - horseNotInside)
     );
+}*/
+
+let totalStalls = 4;
+let horsesInside = 3;
+
+function availableStalls(horsesInside) {
+    let stallsAvail = totalStalls - horsesInside;
+    console.log("There are " + stallsAvail + " stalls available.");
 }
+
+availableStalls(horsesInside);
 
 function horseFee(horse) {
     let horseLateFee = horse.monthlyRent + horse.monthlyRent * 0.2;
